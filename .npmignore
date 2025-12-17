@@ -1,0 +1,41 @@
+# Source files (only dist/ should be published)
+src/
+*.ts
+!*.d.ts
+
+# Test files
+**/__tests__/
+**/*.test.ts
+**/*.spec.ts
+jest.config.js
+
+# Development files
+example/
+TESTING.md
+RELEASING.md
+tsconfig.json
+
+# Build artifacts (already in dist/)
+*.map
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Git
+.git/
+.gitignore
+
+# Dependencies (should not be in package)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Test coverage
+coverage/
+.nyc_output/
+

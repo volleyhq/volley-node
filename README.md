@@ -17,19 +17,19 @@ Official Node.js/TypeScript SDK for the Volley API. This SDK provides a convenie
 ## Installation
 
 ```bash
-npm install @volleyhooks/volley-node
+npm install @volleyhq/volley-node
 ```
 
 or with yarn:
 
 ```bash
-yarn add @volleyhooks/volley-node
+yarn add @volleyhq/volley-node
 ```
 
 ## Quick Start
 
 ```typescript
-import { VolleyClient } from '@volleyhooks/volley-node';
+import { VolleyClient } from '@volleyhq/volley-node';
 
 // Create a client with your API token
 const client = new VolleyClient('your-api-token');
@@ -225,7 +225,7 @@ const eventId = await client.webhooks.send('source_ingestion_id', {
 The SDK throws `VolleyException` for API errors:
 
 ```typescript
-import { VolleyException } from '@volleyhooks/volley-node';
+import { VolleyException } from '@volleyhq/volley-node';
 
 try {
   const org = await client.organizations.get(orgId);
@@ -298,7 +298,7 @@ import {
   Source,
   Event,
   // ... other types
-} from '@volleyhooks/volley-node';
+} from '@volleyhq/volley-node';
 ```
 
 ## Additional Resources
